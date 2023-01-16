@@ -163,3 +163,40 @@
 
 }
 
+.itema{
+    position: absolute;
+    width: 600px;
+    height: 150px;
+    background: #000;
+    left: 50px;
+    color: #fff;
+    text-align: left;
+    text-indent: 50px;
+    box-sizing: border-box;
+}
+
+.item2a{
+    position: absolute;
+    width: 600px;
+    height: 150px;
+    background: #000;
+    left: 50px;
+    top: 325px;
+    color: #fff;
+    text-align: left;
+    text-indent: 50px;
+    box-sizing: border-box;
+}
+
+.item3a{
+    position: absolute;
+    width: 600px;
+    height: 150px;
+    background: #000;
+    left: 50px;
+    top: 500px;
+    color: #fff;
+    text-align: left;
+    text-indent: 50px;
+    box-sizing: border-box;
+}
