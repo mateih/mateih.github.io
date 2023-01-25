@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="js/signup.js"></script>
+    <script src="../behaviour-tracking.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const form = document.getElementById("form");
+        initBehaviourTracking(form);
+    });
+    </script>
+</head>
+<body background="p1.png">
+<div class="signupboxcontainer">
+    <div class="signupbox">
+        <h2>Sign-up as seller</h2>
+        <form id="form" novalidate>
+            <p id="hiddenFields" style="display: none"></p>
+            <p>Username</p>
+            <input type="text" name="username" placeholder="Enter Username" minlength="5" maxlength="12"
+                   pattern="[A-Z][A-Za-z0-9]*[^A-Za-z]" required oninvalid="displayInvalidMessage(this, 'username-val-msg')">
+            <p id="username-val-msg" class="val-msg"></p>
+            <p>Password</p>
+            <input id="pwd" type="password" name="password" placeholder="Enter Password" minlength="12"
+                oninvalid="displayInvalidMessage(this, 'pwd-val-msg')"><br>
+            <p id="pwd-val-msg" class="val-msg"></p>
+            <p>Name</p>
+            <input type="text" name="name" placeholder="Enter Name" pattern="[A-Za-z ]+" required
+                    oninvalid="displayInvalidMessage(this, 'name-val-msg')"><br>
+            <p id="name-val-msg" class="val-msg"></p>
+            <p>Address</p>
+            <input type="text" name="address" placeholder="Enter Address" oninvalid="displayInvalidMessage(this, 'addr-val-msg')"><br>
+            <p id="address-val-msg" class="val-msg"></p>
+            <p>Country</p>
+            <input type="text" name="country" placeholder="Enter Country" required oninvalid="displayInvalidMessage(this, 'country-val-msg')"><br>
+            <p id="country-val-msg" class="val-msg"></p>
+            <p>ZIP Code</p>
+            <input type="text" name="zip" placeholder="Enter ZIP Code" pattern="[\d]{4}[A-Z]{2}" oninvalid="displayInvalidMessage(this, 'zip-val-msg')"><br>
+            <p id="zip-val-msg" class="val-msg"></p>
+            <p>Email</p>
+            <input type="email" name="email" placeholder="Enter Email" required oninvalid="displayInvalidMessage(this, 'email-val-msg')"><br>
+            <p id="email-val-msg" class="val-msg"></p>
+            <p>Sex</p>
+            <select name="sex" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br><br>
+            <p>About</p>
+            <textarea name="about" placeholder="" rows="4" cols="30"></textarea><br>
+            <p>Language</p>
+            <select name="language" required>
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="ro">Romanian</option>
+            </select><br><br>
+            <input type="submit" name="submit" value="Sign-up"><br><br>
+
+            <a href="site2.html">Already have an account?</a><br>
+        </form>
+    </div>
+</div>
+</body>
+</html>

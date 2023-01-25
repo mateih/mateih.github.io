@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="js/signup.js"></script>
+</head>
+<body background="p1.png">
+<div class="signupboxcontainer">
+    <div class="signupbox">
+        <h2>Sign-up as seller</h2>
+        <form action="seller.html" id="form" novalidate>
+            <p>Username</p>
+            <input id="username" type="text" name="username" placeholder="Enter Username">
+            <p id="username-val-msg" class="val-msg"></p>
+            <p>Password</p>
+            <input id="pwd" type="password" name="password" placeholder="Enter Password"><br>
+            <p id="pwd-val-msg" class="val-msg"></p>
+            <p>Name</p>
+            <input id="name" type="text" name="name" placeholder="Enter Name"><br>
+            <p id="name-val-msg" class="val-msg"></p>
+            <p>Address</p>
+            <input id="addr" type="text" name="address" placeholder="Enter Address"><br>
+            <p id="address-val-msg" class="val-msg"></p>
+            <p>Country</p>
+            <input id="country" type="text" name="country" placeholder="Enter Country"><br>
+            <p id="country-val-msg" class="val-msg"></p>
+            <p>ZIP Code</p>
+            <input id="zip" type="text" name="zip" placeholder="Enter ZIP Code"><br>
+            <p id="zip-val-msg" class="val-msg"></p>
+            <p>Email</p>
+            <input id="email" type="text" name="email" placeholder="Enter Email"><br>
+            <p id="email-val-msg" class="val-msg"></p>
+            <p>Sex</p>
+            <select name="sex" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br><br>
+            <p>About</p>
+            <textarea name="about" placeholder="" rows="4" cols="30"></textarea><br>
+            <p>Language</p>
+            <select name="language" required>
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="ro">Romanian</option>
+            </select><br><br>
+            <input type="submit" name="submit" value="Sign-up"><br><br>
+
+            <a href="site2.html">Already have an account?</a><br>
+        </form>
+    </div>
+</div>
+</body>
+</html>
